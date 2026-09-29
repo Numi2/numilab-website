@@ -101,7 +101,8 @@ The same-source 96-substep drop completes FAIL at 35.93 m/s versus the unchanged
 30 m/s limit, despite all 73 regular saved contact states passing. The finer
 pickup also completes FAIL at 56.7 micrometres of fruit/yarn overlap. The new
 `bbf111a` coupled contact source reduces the retained peak projection to
-0.851 micrometres in one certificate pass; its full dynamics replay is pending.
+0.851 micrometres in one certificate pass. The later complete CPU96 pickup
+passed and is documented below.
 A separate native Metal geometry probe passes 1,714 cases twice. This is CCD
 geometry qualification, not full native cloth/bench execution.
 
@@ -119,5 +120,6 @@ Media bytes and their physical source provenance are unchanged by this text upda
 - Both complete 481-frame fruit traces match. Released fruit 1, 4, 9, 10 and 11 finish supported on the lower floor; maximum final vertical speed is 5.492e-13 m/s. All 51 regular/peak saved states pass independent contacts.
 - Worst accepted fruit/yarn overlap is 0.07988 micrometres, below the unchanged 2-micrometre limit; max certificate passes is 3, with 2,920 simultaneous contact blocks and zero fallbacks. Max speed is 14.0719 m/s.
 - Video/poster are byte-identical copies of solver assets. Every regular saved state is rendered from one fixed trajectory camera without smoothing or dynamic interpolation. 49 saved states become 98 held video frames at 24 fps, duration 4.083333 seconds for four simulated seconds.
-- This cloth/rigid-sphere scene does not qualify deformable fruit, temporal convergence, calibrated material, native full spill or whole-scene work/reaction closure. Native focused response now has 104 passing cases, while a new full candidate follows the retained frame-4 failure and ghost-impulse repair: https://github.com/Numi2/numi-solver/blob/09d8ca1/docs/NATIVE_FINITE_BENCH.md
+- This passing CPU cloth/rigid-sphere scene does not qualify deformable fruit, temporal convergence, calibrated material, native full spill or whole-scene work/reaction closure.
+- Native focused response passes 104 cases twice. A separate Apple Metal finite-bench pickup then completed two exact 480-frame replays but returned actual exit 1 / FAIL. Released fruits 8 and 9 remain airborne at terminal frame 480, with static clearances +0.93057 m and +0.41773 m; the grounded released-fruit count is zero against a gate of at least two. All 49 unique saved states pass the independent contact audit, but the strict landing gate fails. [Complete source-bound native terminal audit](https://github.com/Numi2/numi-solver/blob/f713d8f/docs/assets/native-finite-repaired-pickup-audit/README.md).
 - Research comparison targets are explicitly open: https://github.com/Numi2/numi-solver/blob/09d8ca1/docs/DEFORMABLE_FRONTIER.md
