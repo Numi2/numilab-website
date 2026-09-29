@@ -14,6 +14,15 @@ These are copied, unmodified research renders; they are not generated concept ar
 
 - Source: https://github.com/Numi2/numi-solver/blob/81929096e12ed5285ccf1b0c2d457076da534817/docs/assets/cloth-metal-pickup-spill.gif
 - Record: https://github.com/Numi2/numi-solver/blob/81929096e12ed5285ccf1b0c2d457076da534817/README.md
-- 49-frame visualization of a four-second Apple Metal solver trajectory. Executable contact/replay evidence; material calibration and real-time performance are not established by this visualization.
+- Historical 49-frame visualization of a four-second Apple Metal solver trajectory, preceding the September 29 gravity, landing, and packing corrections. Retained as an archive; it does not qualify the changed source.
 
 Historical Numi Lab, Automata, and BirdFlow media remain linked to their original public repositories. The ARDY asset is explicitly captioned as kinematic replay.
+
+## fruit-bag-fp64-20260929.mp4 and fruit-bag-fp64-20260929.png
+
+- Video: https://github.com/Numi2/numi-solver/blob/da4f4ff/docs/assets/cloth-pickup-spill.mp4
+- Poster: https://github.com/Numi2/numi-solver/blob/da4f4ff/docs/assets/cloth-pickup-160.png
+- Qualification log: https://github.com/Numi2/numi-solver/blob/da4f4ff/docs/assets/cloth-pickup-qualified.log
+- Source, binary, and frame fingerprints: https://github.com/Numi2/numi-solver/blob/da4f4ff/docs/assets/cloth-pickup-evidence.json
+- Corrected four-second CPU FP64 trajectory, two full replays passing with physical hash `0x23465c2d4a1627f4`. All four released fruit finish at their contact radii with zero vertical velocity and continue rolling. The 49-frame video displays at 12 fps; its 4.083-second playback represents four simulated seconds.
+- Files are byte-for-byte copies of the published solver assets. Full Metal qualification, physical material calibration, and real-time performance remain separate.
