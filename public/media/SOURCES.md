@@ -82,3 +82,22 @@ Historical Numi Lab, Automata, and BirdFlow media remain linked to their origina
 - Source, binary, all saved states and exact two-replay fingerprints: https://github.com/Numi2/numi-solver/blob/0bdb7ca/docs/assets/finite-bench-loaded-drop-repaired-evidence.json
 - Source6f1e450: 720 frames, 48 substeps, 32 iterations, two exact replays, all 73 exported contact states and unchanged solver gates PASS. After grip release at 3.8 seconds, cloth COM descends 1.7166 m, 28 nodes finish on the floor and both spilled fruits land at their floor radii with zero vertical velocity.
 - Authored-case qualification does not establish timestep convergence, measured material, native finite-bench execution or whole-scene energy/reaction closure. The earlier failed stress video is retained with its persistent failure label.
+
+
+## September 29 finer-run and contact update
+
+The loaded-cloth video remains the completed 48-substep `6f1e450` case.
+The same-source 96-substep drop completes FAIL at 35.93 m/s versus the unchanged
+30 m/s limit, despite all 73 regular saved contact states passing. The finer
+pickup also completes FAIL at 56.7 micrometres of fruit/yarn overlap. The new
+`bbf111a` coupled contact source reduces the retained peak projection to
+0.851 micrometres in one certificate pass; its full dynamics replay is pending.
+A separate native Metal geometry probe passes 1,714 cases twice. This is CCD
+geometry qualification, not full native cloth/bench execution.
+
+- [Source-bound contact and geometry record](https://github.com/Numi2/numi-solver/blob/df1fd2a/docs/COUPLED_YARN_CONTACT.md)
+- [Completed finer loaded-drop failure](https://github.com/Numi2/numi-solver/blob/df1fd2a/docs/assets/finite-bench-load-drop-96-failure.json)
+- [Completed finer pickup failure](https://github.com/Numi2/numi-solver/blob/df1fd2a/docs/assets/finite-bench-load-pickup-96-failure.json)
+- [Completed native ABI14 plane failure](https://github.com/Numi2/numi-solver/blob/df1fd2a/docs/assets/cloth-metal-local-node-failure.json)
+
+Media bytes and their physical source provenance are unchanged by this text update.
