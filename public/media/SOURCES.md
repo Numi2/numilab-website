@@ -62,3 +62,23 @@ Historical Numi Lab, Automata, and BirdFlow media remain linked to their origina
 - Actual physics source is frozen `4186cfa`; the authored grip CSV is `192aed1`. All source, binary, trajectory, 73 saved state, failed gate and media fingerprints are retained in [the receipt](https://github.com/Numi2/numi-solver/blob/b467b82/docs/assets/finite-bench-loaded-drop-48-evidence.json).
 - Both complete 720-frame CPU48 replays match their accepted trajectory hash. After grip release at 3.8 s, saved cloth COM descends 1.739 m and 38 nodes end against the lower floor. Geometry alone does not qualify the scene: contact, strain, ground-correction and speed limits fail. Every video frame carries a persistent failure label.
 - These are simulated cloth and rigid-sphere fruit paths. The authored input moves only the compliant seam grip. The newer support/load-response repair is a separate source-bound full run in progress; this video does not qualify it or imply calibrated fruit properties or whole-scene energy closure.
+
+## elastic-mesh-support-10240-20260929.mp4 and .png
+
+- Byte-identical copies of the new support-aware native replay and maximum-compression poster: https://github.com/Numi2/numi-solver/blob/8f344c8/docs/assets/deformable-support-10240.mp4 and https://github.com/Numi2/numi-solver/blob/8f344c8/docs/assets/deformable-support-10240-38.png
+- Source, binary, state, renderer, video and independent energy fingerprints: https://github.com/Numi2/numi-solver/blob/8f344c8/docs/assets/deformable-support-evidence.json
+- Physics source 6973631; Apple M4 Pro, 2,057 nodes, 10,240 tetrahedra, 0.5 simulated seconds, two exact replays, 307.00 micrometre half-timestep difference and six rejected-state/ledger rollback checks. The exact boundary plays 101 native states at 30 fps for 3.366667 seconds.
+- Support-aware velocity Verlet passes the authored 1 percent numerical energy budget: 0.846 percent at 100 us, versus 144.949 percent for Euler at the same mesh and timestep. Its half-step budget is 0.330 percent. Spatial convergence still fails at 14.927 mm against 1 mm. Physical material, woven-cloth coupling and whole-scene closure remain open; the 81,920-tetrahedron native study is pending.
+
+## elastic-mesh-10240-20260929.mp4 and .png (archived)
+
+- Original byte-identical Euler replay/poster at https://github.com/Numi2/numi-solver/blob/0fc556d/docs/assets/deformable-mesh-10240-drop.mp4 and https://github.com/Numi2/numi-solver/blob/0fc556d/docs/assets/deformable-mesh-10240-drop-38.png
+- Source and original qualification record: https://github.com/Numi2/numi-solver/blob/0fc556d/docs/assets/deformable-mesh-10240-drop-evidence.json
+- This earlier ABI1 video is retained at its existing URL. It does not qualify the later support-aware integrator or establish a small numerical energy bound.
+
+## loaded-cloth-repaired-20260929.mp4 and .png
+
+- Byte-identical six-second repaired CPU FP64 loaded-bag replay: https://github.com/Numi2/numi-solver/blob/0bdb7ca/docs/assets/finite-bench-loaded-drop-repaired.mp4
+- Source, binary, all saved states and exact two-replay fingerprints: https://github.com/Numi2/numi-solver/blob/0bdb7ca/docs/assets/finite-bench-loaded-drop-repaired-evidence.json
+- Source6f1e450: 720 frames, 48 substeps, 32 iterations, two exact replays, all 73 exported contact states and unchanged solver gates PASS. After grip release at 3.8 seconds, cloth COM descends 1.7166 m, 28 nodes finish on the floor and both spilled fruits land at their floor radii with zero vertical velocity.
+- Authored-case qualification does not establish timestep convergence, measured material, native finite-bench execution or whole-scene energy/reaction closure. The earlier failed stress video is retained with its persistent failure label.
