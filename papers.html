@@ -54,20 +54,22 @@
       .actions a:last-child { border-color:var(--ink); color:var(--ink); }
       footer { display:grid; grid-template-columns:1fr auto; gap:20px; align-items:center; padding:34px 8vw; background:#183754; color:#edf4f5; }
       footer p { margin:0; font:10px var(--mono); letter-spacing:.06em; text-transform:uppercase; opacity:.72; }
-      @media (max-width:760px) { .topbar { min-height:64px; grid-template-columns:1fr auto; padding:0 20px; } nav { display:none; } .github { font-size:9px; } .hero { grid-template-columns:1fr; min-height:480px; gap:46px; padding:78px 20px 60px; } .hero h1 { font-size:clamp(66px,20vw,110px); } .hero-copy { font-size:15px; } .archive { padding:72px 20px 82px; } .archive-head { display:block; margin-bottom:25px; } .archive-head .index { margin-bottom:15px; } .paper { grid-template-columns:1fr; } .paper-cover { min-height:0; padding:42px 18%; } .paper-copy { padding:39px 25px 31px; } .paper-kind { margin-bottom:27px; } .paper h3 { font-size:47px; } .abstract { margin:24px 0 30px; font-size:15px; } .metadata { grid-template-columns:1fr 1fr; gap:15px; } .metadata div:last-child { grid-column:1 / -1; } footer { grid-template-columns:1fr; padding:29px 20px; } }
+      :focus-visible { outline:2px solid var(--blue); outline-offset:5px; }
+      @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *, *::before, *::after { transition:none !important; } }
+      @media (max-width:760px) { .topbar { min-height:98px; grid-template-columns:1fr auto; padding-top:16px; padding:0 20px; } nav { grid-column:1 / -1; grid-row:2; justify-content:center; gap:24px; padding:12px 0 16px; } .github { font-size:9px; } .hero { grid-template-columns:1fr; min-height:480px; gap:46px; padding:78px 20px 60px; } .hero h1 { font-size:clamp(66px,20vw,110px); } .hero-copy { font-size:15px; } .archive { padding:72px 20px 82px; } .archive-head { display:block; margin-bottom:25px; } .archive-head .index { margin-bottom:15px; } .paper { grid-template-columns:1fr; } .paper-cover { min-height:0; padding:42px 18%; } .paper-copy { padding:39px 25px 31px; } .paper-kind { margin-bottom:27px; } .paper h3 { font-size:47px; } .abstract { margin:24px 0 30px; font-size:15px; } .metadata { grid-template-columns:1fr 1fr; gap:15px; } .metadata div:last-child { grid-column:1 / -1; } footer { grid-template-columns:1fr; padding:29px 20px; } }
     </style>
   </head>
   <body>
     <a class="skip-link" href="#papers">Skip to papers</a>
     <header class="topbar">
       <a class="wordmark" href="/" aria-label="Numi Lab home"><span aria-hidden="true">●</span> Numi Lab</a>
-      <nav aria-label="Main navigation"><a href="/#work">Work</a><a href="/papers.html" aria-current="page">Papers</a><a href="/#archive">Archive</a></nav>
+      <nav aria-label="Main navigation"><a href="/#suite">Suite</a><a href="/#work">Work</a><a href="/papers.html" aria-current="page">Papers</a><a href="/#archive">Archive</a></nav>
       <a class="github" href="https://github.com/Numi2/numi-lab" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
     </header>
     <main id="papers">
       <section class="hero" aria-labelledby="papers-title">
         <div><p class="index">Numi Lab / Research papers</p><h1 id="papers-title">Research<br /><em>papers.</em></h1></div>
-        <div class="hero-copy"><p>Public papers and technical reports from the laboratory.</p></div>
+        <div class="hero-copy"><p>Public papers and technical reports from the laboratory. For the current Human, Brain, Vivo, and physics research, <a href="/#suite" style="text-decoration:underline;text-underline-offset:4px">explore the Numi Suite</a>.</p></div>
       </section>
       <section class="archive" aria-labelledby="archive-title">
         <div class="archive-head"><p class="index">Public archive / 03</p><h2 id="archive-title">2026</h2></div>
