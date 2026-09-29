@@ -35,3 +35,13 @@ Historical Numi Lab, Automata, and BirdFlow media remain linked to their origina
 - Source, binary, geometry, and media fingerprints: https://github.com/Numi2/numi-solver/blob/166c904/docs/assets/deformable-mesh-drop-evidence.json
 - Native shared-node nonlinear elastic volume: 13 nodes, 20 tetrahedra, 0.5 simulated seconds, two exact replays, a half-timestep run, and five whole-mesh rejection checks. It compresses and recovers on a frictionless inelastic plane. The video retains the exact faceted boundary; 101 native states play at 30 fps for 3.367 seconds.
 - Files are byte-for-byte copies of the published solver assets. Woven-bag coupling, mesh-resolution convergence, frictional surface contact, physical fruit calibration, and total contact-work closure remain open.
+
+## elastic-mesh-refined-20260929.mp4 and elastic-mesh-refined-20260929.png
+
+- Video: https://github.com/Numi2/numi-solver/blob/97aba9a/docs/assets/deformable-mesh-refined-drop.mp4
+- Poster: https://github.com/Numi2/numi-solver/blob/97aba9a/docs/assets/deformable-mesh-refined-drop-37.png
+- Mechanics and refinement: https://github.com/Numi2/numi-solver/blob/97aba9a/docs/DEFORMABLE_MESH.md
+- Source, binary, geometry, and media fingerprints: https://github.com/Numi2/numi-solver/blob/97aba9a/docs/assets/deformable-mesh-refined-drop-evidence.json
+- Newest native shared-node nonlinear elastic volume: 309 nodes, 1,280 tetrahedra, 320 boundary triangles, 0.5 simulated seconds, two exact replays, half-timestep difference at most 135.85 µm, and five whole-mesh rejection checks. All three resolutions preserve the same authored piecewise-flat body and material. The 101 native states play at 30 fps for 3.367 seconds.
+- The finer mesh has individually qualified replay/timestep/geometry checks, but spatial convergence remains open: the 160-to-1,280-element matched-node comparison differs by up to 36.39 mm and fails the 1 mm benchmark target. The exact native boundary is rendered without smoothing or posed deformation. Fruit calibration, woven-bag coupling, frictional surface contact, finite bench, and total contact-work closure remain open.
+- Files are byte-for-byte copies of the published solver assets. The earlier coarse video remains available at its existing media URL.
