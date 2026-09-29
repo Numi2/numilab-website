@@ -26,3 +26,12 @@ Historical Numi Lab, Automata, and BirdFlow media remain linked to their origina
 - Source, binary, and frame fingerprints: https://github.com/Numi2/numi-solver/blob/da4f4ff/docs/assets/cloth-pickup-evidence.json
 - Corrected four-second CPU FP64 trajectory, two full replays passing with physical hash `0x23465c2d4a1627f4`. All four released fruit finish at their contact radii with zero vertical velocity and continue rolling. The 49-frame video displays at 12 fps; its 4.083-second playback represents four simulated seconds.
 - Files are byte-for-byte copies of the published solver assets. Full Metal qualification, physical material calibration, and real-time performance remain separate.
+
+## elastic-mesh-native-20260929.mp4 and elastic-mesh-native-20260929.png
+
+- Video: https://github.com/Numi2/numi-solver/blob/166c904/docs/assets/deformable-mesh-drop.mp4
+- Poster: https://github.com/Numi2/numi-solver/blob/166c904/docs/assets/deformable-mesh-drop-38.png
+- Record: https://github.com/Numi2/numi-solver/blob/166c904/docs/DEFORMABLE_MESH.md
+- Source, binary, geometry, and media fingerprints: https://github.com/Numi2/numi-solver/blob/166c904/docs/assets/deformable-mesh-drop-evidence.json
+- Native shared-node nonlinear elastic volume: 13 nodes, 20 tetrahedra, 0.5 simulated seconds, two exact replays, a half-timestep run, and five whole-mesh rejection checks. It compresses and recovers on a frictionless inelastic plane. The video retains the exact faceted boundary; 101 native states play at 30 fps for 3.367 seconds.
+- Files are byte-for-byte copies of the published solver assets. Woven-bag coupling, mesh-resolution convergence, frictional surface contact, physical fruit calibration, and total contact-work closure remain open.

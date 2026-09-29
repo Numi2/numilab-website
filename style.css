@@ -66,3 +66,4 @@
 
 .progress-card .replay-video video{aspect-ratio:6/5;background:#fff}
 .progress-card .replay-video figcaption{position:static;padding:14px 20px;margin:0}
+@media(min-width:761px){.mesh-progress{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}}
