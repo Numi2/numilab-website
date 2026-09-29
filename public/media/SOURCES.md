@@ -45,3 +45,13 @@ Historical Numi Lab, Automata, and BirdFlow media remain linked to their origina
 - Newest native shared-node nonlinear elastic volume: 309 nodes, 1,280 tetrahedra, 320 boundary triangles, 0.5 simulated seconds, two exact replays, half-timestep difference at most 135.85 µm, and five whole-mesh rejection checks. All three resolutions preserve the same authored piecewise-flat body and material. The 101 native states play at 30 fps for 3.367 seconds.
 - The finer mesh has individually qualified replay/timestep/geometry checks, but spatial convergence remains open: the 160-to-1,280-element matched-node comparison differs by up to 36.39 mm and fails the 1 mm benchmark target. The exact native boundary is rendered without smoothing or posed deformation. Fruit calibration, woven-bag coupling, frictional surface contact, finite bench, and total contact-work closure remain open.
 - Files are byte-for-byte copies of the published solver assets. The earlier coarse video remains available at its existing media URL.
+
+## fruit-bag-repaired-cpu96-20260929.mp4 and fruit-bag-repaired-cpu96-20260929.png
+
+- Video: https://github.com/Numi2/numi-solver/blob/33ca2d5/docs/assets/cloth-local-node-pickup.mp4
+- Poster: https://github.com/Numi2/numi-solver/blob/33ca2d5/docs/assets/cloth-local-node-pickup-160.png
+- Mechanics: https://github.com/Numi2/numi-solver/blob/33ca2d5/docs/FRUIT_FALL.md
+- Source, binary, two terminal runs, state, and media fingerprints: https://github.com/Numi2/numi-solver/blob/33ca2d5/docs/assets/cloth-local-node-pickup-evidence.json
+- Newest completed CPU FP64 plane-contact trajectory after the local cloth thickness repair: 480 frames, 96 substeps, 32 iterations, four simulated seconds, two matching final physical hashes `0x5496d0e5fd2c9611`. The knot maximum is 0.069257379 rad. Four released fruits finish outside the capped mesh at their support radii with zero vertical velocity, still rolling. All 49 exported states pass the independent contact audit including local node contacts. The 49-frame video plays at 12 fps for 4.083 seconds.
+- The 48-substep run also passes but releases three different fruits. Matched fruit centers differ by up to 7.17 metres: passing gates does not establish timestep convergence. Native full-scene spill, fruit deformation, finite-bench full-scene qualification, material calibration, and complete energy closure remain open.
+- Files are byte-for-byte copies of the published solver assets. Earlier media URLs remain available.
