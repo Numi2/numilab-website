@@ -55,3 +55,10 @@ Historical Numi Lab, Automata, and BirdFlow media remain linked to their origina
 - Newest completed CPU FP64 plane-contact trajectory after the local cloth thickness repair: 480 frames, 96 substeps, 32 iterations, four simulated seconds, two matching final physical hashes `0x5496d0e5fd2c9611`. The knot maximum is 0.069257379 rad. Four released fruits finish outside the capped mesh at their support radii with zero vertical velocity, still rolling. All 49 exported states pass the independent contact audit including local node contacts. The 49-frame video plays at 12 fps for 4.083 seconds.
 - The 48-substep run also passes but releases three different fruits. Matched fruit centers differ by up to 7.17 metres: passing gates does not establish timestep convergence. Native full-scene spill, fruit deformation, finite-bench full-scene qualification, material calibration, and complete energy closure remain open.
 - Files are byte-for-byte copies of the published solver assets. Earlier media URLs remain available.
+
+## Loaded-cloth stress test — September 29, 2026
+
+- `loaded-cloth-stress-20260929.mp4` and `.png` are byte-identical copies of Numi Solver's labeled six-second finite-bench stress media at commit `b467b82`.
+- Actual physics source is frozen `4186cfa`; the authored grip CSV is `192aed1`. All source, binary, trajectory, 73 saved state, failed gate and media fingerprints are retained in [the receipt](https://github.com/Numi2/numi-solver/blob/b467b82/docs/assets/finite-bench-loaded-drop-48-evidence.json).
+- Both complete 720-frame CPU48 replays match their accepted trajectory hash. After grip release at 3.8 s, saved cloth COM descends 1.739 m and 38 nodes end against the lower floor. Geometry alone does not qualify the scene: contact, strain, ground-correction and speed limits fail. Every video frame carries a persistent failure label.
+- These are simulated cloth and rigid-sphere fruit paths. The authored input moves only the compliant seam grip. The newer support/load-response repair is a separate source-bound full run in progress; this video does not qualify it or imply calibrated fruit properties or whole-scene energy closure.
