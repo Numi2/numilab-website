@@ -101,3 +101,13 @@ geometry qualification, not full native cloth/bench execution.
 - [Completed native ABI14 plane failure](https://github.com/Numi2/numi-solver/blob/df1fd2a/docs/assets/cloth-metal-local-node-failure.json)
 
 Media bytes and their physical source provenance are unchanged by this text update.
+
+## fruit-bag-coupled-cpu96-20260929.mp4 and .png
+
+- Newest full CPU FP64 finite-tabletop/lower-floor pickup from physics source `bbf111ae4a761ea68b8906a0084120b805a59b9d`: 480 frames, 96 substeps, 32 iterations, two complete four-second replays, actual exit 0 / PASS.
+- Record and source/binary/video receipts: https://github.com/Numi2/numi-solver/blob/09d8ca1/docs/assets/coupled-bench-pickup-96-evidence.json
+- Both complete 481-frame fruit traces match. Released fruit 1, 4, 9, 10 and 11 finish supported on the lower floor; maximum final vertical speed is 5.492e-13 m/s. All 51 regular/peak saved states pass independent contacts.
+- Worst accepted fruit/yarn overlap is 0.07988 micrometres, below the unchanged 2-micrometre limit; max certificate passes is 3, with 2,920 simultaneous contact blocks and zero fallbacks. Max speed is 14.0719 m/s.
+- Video/poster are byte-identical copies of solver assets. Every regular saved state is rendered from one fixed trajectory camera without smoothing or dynamic interpolation. 49 saved states become 98 held video frames at 24 fps, duration 4.083333 seconds for four simulated seconds.
+- This cloth/rigid-sphere scene does not qualify deformable fruit, temporal convergence, calibrated material, native full spill or whole-scene work/reaction closure. Native focused response now has 104 passing cases, while a new full candidate follows the retained frame-4 failure and ghost-impulse repair: https://github.com/Numi2/numi-solver/blob/09d8ca1/docs/NATIVE_FINITE_BENCH.md
+- Research comparison targets are explicitly open: https://github.com/Numi2/numi-solver/blob/09d8ca1/docs/DEFORMABLE_FRONTIER.md
