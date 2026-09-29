@@ -68,7 +68,15 @@ Historical Numi Lab, Automata, and BirdFlow media remain linked to their origina
 - Byte-identical copies of the new support-aware native replay and maximum-compression poster: https://github.com/Numi2/numi-solver/blob/8f344c8/docs/assets/deformable-support-10240.mp4 and https://github.com/Numi2/numi-solver/blob/8f344c8/docs/assets/deformable-support-10240-38.png
 - Source, binary, state, renderer, video and independent energy fingerprints: https://github.com/Numi2/numi-solver/blob/8f344c8/docs/assets/deformable-support-evidence.json
 - Physics source 6973631; Apple M4 Pro, 2,057 nodes, 10,240 tetrahedra, 0.5 simulated seconds, two exact replays, 307.00 micrometre half-timestep difference and six rejected-state/ledger rollback checks. The exact boundary plays 101 native states at 30 fps for 3.366667 seconds.
-- Support-aware velocity Verlet passes the authored 1 percent numerical energy budget: 0.846 percent at 100 us, versus 144.949 percent for Euler at the same mesh and timestep. Its half-step budget is 0.330 percent. Spatial convergence still fails at 14.927 mm against 1 mm. Physical material, woven-cloth coupling and whole-scene closure remain open; the 81,920-tetrahedron native study is pending.
+- Support-aware velocity Verlet passes the authored 1 percent numerical energy budget: 0.846 percent at 100 us, versus 144.949 percent for Euler at the same mesh and timestep. Its half-step budget is 0.330 percent. The 1,280-to-10,240-element spatial comparison fails at 14.927 mm against 1 mm. This earlier video remains available; the completed 81,920-tetrahedron result is recorded below.
+
+## elastic-mesh-support-81920-20260929.mp4 and .png
+
+- Byte-identical copies of the standalone native volume video and maximum-compression poster: https://github.com/Numi2/numi-solver/blob/5cba5a1/docs/assets/deformable-support-81920.mp4 and https://github.com/Numi2/numi-solver/blob/5cba5a1/docs/assets/deformable-support-81920-38.png
+- Source, binary, all exported OBJ hashes, independent geometry and numerical energy audits, and media fingerprints: https://github.com/Numi2/numi-solver/blob/5cba5a1/docs/assets/deformable-support-81920-evidence.json
+- The Apple M4 Pro advanced 14,993 shared nodes and 81,920 tetrahedra for 0.5 simulated seconds. The actual native and independent audit exits were both 0. Native replay matched exactly and the 40,000-step half-timestep run differed by at most 93.11 µm from the 20,000-step run. All 101 captured states in each run passed independent geometry and mass checks. The authored 1 percent numerical energy budget passed at 0.254% for the primary run and 0.122% for the half-timestep run.
+- All 101 exact exported native boundary states render at 30 fps for 3.366667 seconds. The video uses a fixed camera, with no smoothing or posed deformation. It shows an authored volume and frictionless inelastic plane, not the deformable bag or fruit.
+- Spatial convergence, measured material, reciprocal cloth/fruit coupling and complete physical work closure remain open. The previously published 10,240-tetrahedron video stays at its existing URL.
 
 ## elastic-mesh-10240-20260929.mp4 and .png (archived)
 

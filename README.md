@@ -15,4 +15,4 @@ npm run dev
 npm run build
 ```
 
-Newest native elastic volume media uses support-aware velocity Verlet: the 10,240-element authored numerical energy budget is 0.85%, down from Euler's 144.95% at the same timestep. Spatial convergence remains open; the 81,920-element study is running. Provenance and archived media are recorded in [public/media/SOURCES.md](public/media/SOURCES.md).
+The newest native elastic volume video shows a standalone 81,920-tetrahedron Apple Metal run. Its independently audited numerical energy bounds are 0.254% at 25 µs and 0.122% at the half timestep, within the authored 1% budget. Spatial convergence and coupled bag/fruit mechanics remain open. Provenance and archived media are recorded in [public/media/SOURCES.md](public/media/SOURCES.md).
