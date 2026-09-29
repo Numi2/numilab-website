@@ -16,6 +16,14 @@ These are copied, unmodified research renders; they are not generated concept ar
 - Record: https://github.com/Numi2/numi-solver/blob/81929096e12ed5285ccf1b0c2d457076da534817/README.md
 - Historical 49-frame visualization of a four-second Apple Metal solver trajectory, preceding the September 29 gravity, landing, and packing corrections. Retained as an archive; it does not qualify the changed source.
 
+## fruit-mass-comparison.mp4 and fruit-mass-comparison-poster.png
+
+- Source: https://github.com/Numi2/numi-solver/blob/84a1d5a/docs/assets/fruit-mass-1x-vs-3x-native-diagnostic.mp4
+- Poster: https://github.com/Numi2/numi-solver/blob/84a1d5a/docs/assets/fruit-mass-1x-vs-3x-native-diagnostic.png
+- Record: https://github.com/Numi2/numi-solver/blob/84a1d5a/docs/assets/fruit-mass-1x-vs-3x-native-diagnostic.json
+- Exact input snapshots and rendering source: https://github.com/Numi2/numi-solver/blob/84a1d5a/docs/assets/fruit-mass-1x-vs-3x-native-diagnostic-inputs.tar.gz
+- One simulated second of first-replay native Apple Metal frames with original and 3× fruit mass. Initial geometry matches exactly, but the runs used different Apple hosts and binaries. This is a visual diagnostic, not a matched same-host control, independently audited contact certificate, or Franka arm result.
+
 Historical Numi Lab, Automata, and BirdFlow media remain linked to their original public repositories. The ARDY asset is explicitly captioned as kinematic replay.
 
 ## fruit-bag-fp64-20260929.mp4 and fruit-bag-fp64-20260929.png
