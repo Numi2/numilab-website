@@ -2,6 +2,14 @@
 
 These are copied, unmodified research renders; they are not generated concept art.
 
+## dvrk-gs21-suture-pickup.png
+
+- Source image: https://github.com/Numi2/numi-lab/blob/14fedd1d2af2cd7901fd8be79944ca3d6e675b65/docs/media/numi-lab-dvrk-gs21-suture-pickup.png
+- Record: https://github.com/Numi2/numi-lab/blob/14fedd1d2af2cd7901fd8be79944ca3d6e675b65/README.md#dvrk-gs21-suture-pickup
+- A 1280x960 Metal render from the accepted state of a source-grounded Classic PSM Large Needle Driver pickup. The recorded simulation carried a curved GS21 with a coupled 25-node, 180 mm discrete elastic rod and retained its grasp through 2000 lift frames.
+- This is a still of needle handling and deformable-thread coupling. It does not show a needle passing through skin, a completed wound closure, or a clinical result. Thread constants remain research defaults.
+- The model follows the JHU dVRK definitions and Medtronic catalog facts listed in the source repository's [third-party notices](https://github.com/Numi2/numi-lab/blob/14fedd1d2af2cd7901fd8be79944ca3d6e675b65/THIRD_PARTY_NOTICES.md); it is not endorsed by those organizations.
+
 ## numi-human-native.png
 
 - Source: https://github.com/Numi2/numilab-human/blob/0eb103038572c268dddf7bdf92594d82b30452b1/Docs/media/unassisted-standing-20260922/oblique.png
