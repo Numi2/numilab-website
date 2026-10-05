@@ -1,0 +1,26 @@
+{
+  "schema": "numilab.human.standing-startup-fit-diagnostic.v1",
+  "date": "2026-10-05",
+  "attempt": "standing-native-004/execution-027-m4",
+  "source_revision": "c162c770553ce4bbddbbbd2e39c472bafe589bfa",
+  "source_overlay_sha256": "448f68d72f097a464e708be61b2b70910f7e6926470b4583de34ea3bba3c7824",
+  "native_binary_sha256": "d7a1d4245d71882066e7311b07e459be41241733a01c6c820ab64bd3a09fdfbb",
+  "preregistered_plan_sha256": "c83eaece565fbc8355e0a54023561d8dce75966969bc9d976cff990a0b2cb507",
+  "root_assistance": false,
+  "requested_steps": 1,
+  "accepted_dynamics_steps": 0,
+  "accepted_simulated_seconds": 0,
+  "fit": {
+    "active_contact_count": 6,
+    "unilateral_contact_count": 4,
+    "objective_m2": 0.0000512637592884,
+    "maximum_active_gap_mm": 4.686716,
+    "minimum_all_gap_mm": -0.231441,
+    "maximum_all_gap_mm": 6.515504,
+    "active_contact_absolute_gap_limit_mm": 0.001,
+    "unilateral_gap_range_mm": [-0.001, 2.0]
+  },
+  "optimizer_change": "The Gauss-Newton step is uniformly scaled to preserve its direction at the existing per-update cap. The fit objective fell by approximately 46% versus the preceding diagnostic, but the startup contact gate still failed.",
+  "outcome": "Rejected before dynamics; this is a one-step pose-fit diagnostic, not a standing result.",
+  "qualification_boundary": "No current 10-second standing video, biomechanical qualification, clinical anatomy validation, or biological result is established."
+}

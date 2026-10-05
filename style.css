@@ -75,6 +75,17 @@ body{font-size:16px}.topbar nav,.github{font-size:14px}.index,.system-number{fon
 @media(max-width:760px){.topbar nav{gap:16px;flex-wrap:wrap;font-size:12px}.hero{min-height:760px;padding:155px 20px 32px}.hero-title{margin:45px 0}.hero-title h1{font-size:clamp(44px,10vw,72px);line-height:1.08}.hero-title h1 em{padding:0}.hero-intro{font-size:17px}.hero-actions{gap:20px}.hero-bottom p{max-width:none;font-size:12px}.hero-bottom a{font-size:12px}.questions .section-head{display:block}.questions .index{margin-bottom:22px}.questions li{grid-template-columns:28px 1fr;gap:12px}.questions li h3{font-size:29px}.questions li p{font-size:16px}.codex-section{grid-template-columns:1fr;padding:76px 20px;gap:35px}.codex-heading h2{font-size:48px}.codex-heading>p:last-child{font-size:18px}.proposition>div>p,.suite-intro{font-size:16px}.plugin-flow li{grid-template-columns:70px 1fr}.section-head{flex-wrap:wrap}}
 .questions li .question-impact{margin-top:18px;padding:16px 20px;border-left:2px solid #56866c;background:#e8eee7;color:#304d3e}.question-impact strong{display:block;font-size:14px;margin-bottom:5px}
 
+/* Fresh suite work and source-bound Human visuals, October 2026. */
+.latest-work-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0 0 36px}
+.latest-work-links a{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 16px;padding:19px 22px;background:#213735;color:var(--paper);text-decoration:none;border-left:2px solid #b9d8c8}
+.latest-work-links a span{grid-column:1/-1;font:11px/1.5 var(--mono);letter-spacing:.05em;color:#b9d8c8}
+.latest-work-links a strong{font:500 20px/1.25 var(--serif)}
+.latest-work-links a em{font:11px/1.5 var(--mono);font-style:normal;color:#c8d7ce;text-align:right}
+.progress-card.human-evidence-card figure img{aspect-ratio:unset;height:auto;object-fit:contain;background:#111e2b}
+.progress-card.human-evidence-card figure figcaption{position:static;padding:12px 18px;margin:0;background:#1c2732}
+@media(min-width:761px){.progress-card.circulation-progress{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:stretch}.circulation-progress figure{display:flex;flex-direction:column;justify-content:center}.circulation-progress figure img{max-height:560px}.circulation-progress .progress-copy{padding:clamp(30px,4vw,58px)}}
+@media(max-width:760px){.latest-work-links{grid-template-columns:1fr}.latest-work-links a{padding:16px 18px}.latest-work-links a strong{font-size:18px}.latest-work-links a em{font-size:10px}}
+
 /* Mac-as-laboratory mission, September 2026. */
 .mission-hero{min-height:860px;height:auto;max-height:none;padding:130px 6vw 36px;background:radial-gradient(ellipse 44% 60% at 78% 48%,rgba(71,130,111,.26),transparent 75%),radial-gradient(ellipse 60% 55% at 95% 5%,rgba(29,69,85,.54),transparent 80%),#0b1717}
 .mission-hero::before{opacity:.25;mask-image:linear-gradient(90deg,transparent,#000 35%,#000)}
